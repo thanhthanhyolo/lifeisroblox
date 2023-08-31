@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life is roblox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #declaration {
+            margin-top: 50px;
+            font-size: 20px;
+            color: red;
+        }
+        #smiley {
+            font-size: 40px;
+        }
+        #response {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Yêu đương cc</h1>
+    <p id="declaration">Bạn có đồng ý với mình không </p>
+    <p id="smiley">😊</p>
+    <div id="response">
+        <button id="agreeButton">Đồng ý</button>
+        <button id="disagreeButton">Không đồng ý</button>
+    </div>
+    <p id="responseMessage"></p>
+    
+    <script>
+        const agreeButton = document.getElementById('agreeButton');
+        const disagreeButton = document.getElementById('disagreeButton');
+        const responseMessage = document.getElementById('responseMessage');
+        
+        agreeButton.addEventListener('click', () => {
+            responseMessage.textContent = 'Yêu đương cc. Life is roblox';
+        });
+        
+        disagreeButton.addEventListener('click', () => {
+            responseMessage.textContent = 'Yêu cc chơi roblox đi #lifeisroblox';
+        });
+    </script>
+</body>
+</html>
